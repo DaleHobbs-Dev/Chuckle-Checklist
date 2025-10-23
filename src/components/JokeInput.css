@@ -1,0 +1,48 @@
+/* Class for the container that wraps your input and button for adding a joke. */
+.joke-add-form {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  /* Class for the input element for a new one-liner */
+}
+.joke-add-form .joke-input {
+  border-radius: 0.5rem 0rem 0rem 0.5rem;
+  border: 2px solid white;
+  flex-grow: 1;
+  margin: 1rem 0;
+}
+.joke-add-form {
+  /* Adds styling for when the user clicks in the input field */
+}
+.joke-add-form .joke-input:focus::placeholder {
+  color: transparent;
+}
+.joke-add-form {
+  /* Class for the button to add */
+}
+.joke-add-form .joke-input-submit {
+  width: 20%;
+  margin: 1rem 0;
+  border-radius: 0rem 0.5rem 0.5rem 0rem;
+  background: white;
+  color: var(--col-5);
+  border: 2px solid var(--col-5);
+}
+.joke-add-form {
+  /* Adds styling for when the user hovers over the button */
+}
+.joke-add-form .joke-input-submit:hover,
+.joke-add-form .joke-input-submit:active {
+  cursor: pointer;
+  transition: all 0.25s ease-in;
+  background: var(--col-5);
+  color: white;
+}
+.joke-add-form {
+  /* Adds styles for both the joke-input class and the joke-input-submit class */
+}
+.joke-add-form .joke-input,
+.joke-add-form .joke-input-submit {
+  outline: none;
+  padding: 0.5rem 1rem;
+}

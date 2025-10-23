@@ -1,0 +1,43 @@
+h1 {
+  font-family: "Source Sans Pro", sans-serif;
+  font-weight: 300;
+}
+
+/* Targets all h2s in the app. Intended for the "Add Joke", "Untold", and "Told" headers */
+h2 {
+  border: none;
+  border-bottom: 3px solid var(--col-2);
+  padding: 0.25rem 0;
+}
+
+/* Class for the heading container.. It should be added to a div that wraps all the heading elements. */
+.app-heading {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  /* Class for the text for the heading. It should be added to an h1 inside of the div with the .app-heading class */
+}
+
+.app-heading .app-heading-text {
+  font-size: 3.5rem;
+  margin-top: 1rem;
+}
+
+.app-heading .app-heading-circle {
+  background: var(--col-2);
+  width: 7rem;
+  height: 7rem;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 4rem;
+  box-shadow: 2px 4px 10px hsla(0, 0%, 0%, 0.3),
+    2px 4px 20px hsla(0, 0%, 0%, 0.2);
+}
+
+.app-heading .app-heading-circle .app-logo {
+  width: 5rem;
+  filter: drop-shadow(1px 1px 11px var(--col-0));
+}

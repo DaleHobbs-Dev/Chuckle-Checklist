@@ -1,5 +1,6 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faTrash } from "@fortawesome/free-solid-svg-icons";
+import "./JokeList.css";
 import PropTypes from "prop-types";
 
 export const JokeList = ({
@@ -7,12 +8,13 @@ export const JokeList = ({
   jokes,
   onDelete,
   onToggleStatus,
+  label,
   toggleLabel,
 }) => {
   return (
     <div className="joke-list-container">
       <h2>
-        {title} <span className="joke-count">{jokes.length}</span>
+        {title} <span className={`${label}-count`}>{jokes.length}</span>
       </h2>
       <ul>
         {jokes.map((joke) => (
